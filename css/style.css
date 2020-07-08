@@ -1,0 +1,243 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #121212;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #8c8c8c;
+    position: relative;
+}
+
+body:after {
+    position: fixed;
+    top: -150px;
+    right: -50px;
+    bottom: 0;
+    content: '';
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgba(240, 211, 247, 0.1);
+    z-index: -1;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+body:before {
+    position: fixed;
+    top: 400px;
+    left: -100px;
+    bottom: 0;
+    content: '';
+    width: 400px;
+    height: 800px;
+    border: 2px solid rgba(240, 211, 247, 0.1);
+    z-index: -1;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+.bg-dark {
+    background-color: #121212 !important;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #B98EA7;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F0D3F7;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 400;
+}
+
+.section {
+    padding: 7em 0;
+}
+
+.navbar {
+    border-bottom: 2px solid rgba(240, 211, 247, 0.1);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1{
+    font-weight: 700;
+    font-size: 60px;    
+}
+
+.hero-text p{
+    font-size: 20px;    
+}
+
+
+/* PROJECTS */
+
+.portfolio-text {
+    font-family: Consolas, monaco, monospace;
+}
+
+.project-tile .image {
+    width: 100%;
+    padding: 10% 7%;
+}
+
+@media (min-width: 768px) {
+    .project-tile .image {
+        width: 40%;
+        padding: 10% 7%;
+    }
+}
+
+.project-tile .image .icon {
+    width: 100px;
+    height: 100px;
+    background: #F0D3F7;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .project-tile .image .icon {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+.project-tile .image .icon span {
+    color: #B98EA7;
+}
+
+.project-tile .image:hover .icon {
+    opacity: 1;
+}
+
+.project-tile .text {
+    width: 100%;
+    padding: 10% 7%;
+}
+
+@media (min-width: 768px) {
+    .project-tile .text {
+        width: 60%;
+        padding: 10% 7%;
+    }
+}
+
+.project-tile .text .subheading {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #8c8c8c;
+}
+
+.project-tile .text .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.project-tile .text .heading a {
+    color: #fff;
+}
+
+.project-tile .text p:last-child {
+    margin-bottom: 0;
+}
+
+.project-tile .image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767.98px) {
+    .project-tile .image {
+        height: 300px;
+    }
+}
+
+/* CONTACT */
+
+.contact .contact-text h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact .contact-text p {
+    font-size: 20px;
+}
+
+.contact-social li {
+    list-style: none;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+
+.contact-social li a {
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    position: relative;
+}
+
+.contact-social li a span {
+    position: absolute;
+    font-size: 26px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact-social li a:hover {
+    color: #fff;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 2px solid rgba(240, 211, 247, 0.1);
+    font-size: 16px;
+    background: #121212;
+    padding: 1em 0;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer a:hover {
+    color: #fff;
+}
